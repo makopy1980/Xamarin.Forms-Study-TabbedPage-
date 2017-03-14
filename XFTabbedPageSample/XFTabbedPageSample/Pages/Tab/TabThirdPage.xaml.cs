@@ -22,6 +22,9 @@ namespace XFTabbedPageSample.Pages.Tab
 
         }
 
+        /// <summary>
+        /// "Next"ボタンタップ時動作
+        /// </summary>
         private async void OnNextButtonTapped(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new PushPage1(), true);
@@ -29,6 +32,7 @@ namespace XFTabbedPageSample.Pages.Tab
 
         protected override bool OnBackButtonPressed()
         {
+            // Backキー無効化
             return true;
         }
     }
