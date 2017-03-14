@@ -6,6 +6,10 @@
 	<TabbedPage.Children>
 		<tabpages:TabFirstPage Icon="TabIcon1.png" />
 		<tabpages:TabSecondPage Icon="TabIcon2.png" />
-		<tabpages:TabThirdPage Icon="TabIcon3.png" />
+		<NavigationPage Title="Third" Icon="TabIcon3.png">
+			<x:Arguments>
+				<tabpages:TabThirdPage />
+			</x:Arguments>
+		</NavigationPage>
 	</TabbedPage.Children>
 </TabbedPage>

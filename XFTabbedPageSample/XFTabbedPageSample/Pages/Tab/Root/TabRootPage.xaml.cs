@@ -11,5 +11,10 @@ namespace XFTabbedPageSample.Pages.Tab.Root
         {
             InitializeComponent();
         }
+
+        //protected override bool OnBackButtonPressed()
+        //{
+        //    return true;
+        //}
     }
 }

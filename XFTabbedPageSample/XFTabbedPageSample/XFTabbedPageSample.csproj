@@ -36,10 +36,13 @@
     <EmbeddedResource Include="Pages\Tab\Root\TabRootPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pages\TabSecondPage.xaml">
+    <EmbeddedResource Include="Pages\Tab\TabThirdPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pages\Tab\TabThirdPage.xaml">
+    <EmbeddedResource Include="Pages\Tab\TabSecondPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Navigation\PushPage1.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
@@ -58,11 +61,14 @@
     <Compile Include="Pages\Tab\Root\TabRootPage.xaml.cs">
       <DependentUpon>TabRootPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\TabSecondPage.xaml.cs">
-      <DependentUpon>TabSecondPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Pages\Tab\TabThirdPage.xaml.cs">
       <DependentUpon>TabThirdPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Tab\TabSecondPage.xaml.cs">
+      <DependentUpon>TabSecondPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Navigation\PushPage1.xaml.cs">
+      <DependentUpon>PushPage1.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -83,6 +89,7 @@
     <Folder Include="Pages\" />
     <Folder Include="Pages\Tab\" />
     <Folder Include="Pages\Tab\Root\" />
+    <Folder Include="Pages\Navigation\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.3.3.193\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.3.3.193\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />

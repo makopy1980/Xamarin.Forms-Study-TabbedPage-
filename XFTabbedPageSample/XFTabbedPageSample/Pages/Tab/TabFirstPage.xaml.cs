@@ -14,5 +14,10 @@ namespace XFTabbedPageSample.Pages.Tab
             // ページタイトル→Tabのタイトル
             this.Title = "First";
         }
+
+        protected override bool OnBackButtonPressed()
+        {
+            return true;
+        }
     }
 }
